@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#ffe4ee"/>
+      <stop offset="0.55" stop-color="#ff9ec0"/>
+      <stop offset="1" stop-color="#e86c9a"/>
+    </radialGradient>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9b6ff"/>
+      <stop offset="1" stop-color="#8f6fe0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#7a2346" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <!-- back card -->
+  <g transform="rotate(-14 256 280)" filter="url(#sh)">
+    <rect x="128" y="112" width="210" height="292" rx="26" fill="url(#back)" stroke="#fff" stroke-width="10"/>
+    <g fill="#fff" opacity="0.55">
+      <circle cx="233" cy="258" r="34"/>
+      <path d="M205 236 l-8 -30 l26 18 z M261 236 l8 -30 l-26 18 z"/>
+    </g>
+  </g>
+  <!-- front card -->
+  <g transform="rotate(10 300 280)" filter="url(#sh)">
+    <rect x="188" y="118" width="210" height="292" rx="26" fill="#fffafc" stroke="#ffd1e1" stroke-width="6"/>
+    <text x="214" y="178" font-family="Fredoka, Arial Rounded MT Bold, Arial, sans-serif" font-weight="700" font-size="54" fill="#e2366f">A</text>
+    <path d="M293 330 C 240 292 222 266 222 240 C 222 218 239 202 260 202 C 275 202 287 211 293 224 C 299 211 311 202 326 202 C 347 202 364 218 364 240 C 364 266 346 292 293 330 Z" fill="#ff4d7e"/>
+  </g>
+  <!-- sparkles -->
+  <g fill="#fff">
+    <path d="M412 92 l8 22 l22 8 l-22 8 l-8 22 l-8 -22 l-22 -8 l22 -8 z"/>
+    <path d="M96 400 l5 14 l14 5 l-14 5 l-5 14 l-5 -14 l-14 -5 l14 -5 z" opacity="0.85"/>
+  </g>
+</svg>
